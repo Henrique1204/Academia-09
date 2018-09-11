@@ -1,0 +1,62 @@
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
+    margin: 0;
+    background-color: aquamarine;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 4px solid black;
+    background-color: blueviolet;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    align-items: center;
+    background-color: azure;
+}
+
+header img{
+    width: 6vw;
+    padding: 5px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 12pt;
+    margin-left: 15px;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+}
+
+aside h2, aside p{
+    padding: 10px;
+    margin: 20px 10px 0px 10px;
+    color: red;
+}
+
+aside p{
+    font-weight: bold;
+    line-height:20px; /* altura da linha */
+    letter-spacing: 1px; /*espaço entre as letras*/
+}
+
+.lado{
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; 
+}
