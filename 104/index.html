@@ -15,9 +15,81 @@
     <section>
         <div>
             <h3>Sobre você</h3>
+            <label for="nome">Nome:</label>
+            <input name="nome" type="text">
+            <label for="idade">Idade:</label>
+            <input name="idade" type="number" min="5" max="110">
+            <label for="email">E-mail:</label>
+            <input name="email" type="email">
+            <label for="senha">Senha:</label>
+            <input name="senha" type="password">
         </div>
         <div>
             <h3>Suas preferências de entretenimento</h3>
+            <label for="plataforma">Qual a plataforma que vo^ce mais usa para jogar?</label>
+            <select name="plataforma">
+                <option value="">Escolha...</option>
+                <option value="ps">Sony PlayStation</option>
+                <option value="ms">Microsoft Xbox</option>
+                <option value="nt">Nintendo</option>
+                <option value="pc">Computador</option>
+                <option value="xd">Smartphone</option>
+            </select>
+            <label for="generos">Quais os seus gêneros preferidos?</label>
+            <div id="check-generos">
+                <label for="ação"><input name="ação" type="checkbox"> Ação</label>
+                <label for="aventura"><input name="aventura" type="checkbox">Aventura</label>
+                <label for="RPG"><input name="RPG" type="checkbox">RPG</label>
+                <label for="esporte"><input name="esporte" type="checkbox">Esporte</label>
+                <label for="tiro"><input name="tiro" type="checkbox">Tiro</label>
+                <label for="simulação"><input name="simulação" type="checkbox">Simulação</label>
+                <label for="estrategia"><input name="estrategia" type="checkbox">Estratégia</label>
+                <label for="plataforma"><input name="plataforma" type="checkbox">Plataforma</label>
+                <label for="luta"><input name="luta" type="checkbox">Luta</label>
+                <label for="casual"><input name="casual" type="checkbox">Casual</label>
+            </div>
+        </div>
+        <label for="relevancia">Qual a relevância de cada um dos seguintes critérios para a sua experiência:</label>
+        <div id="relevancia">
+            <div class="categoria">
+                <label for="historia">História</label>
+                <div id="historia">
+                    <label for="h3" <input type="radio" name="h3">3</label>
+                    <label for="h2" <input type="radio" name="h2">2</label>
+                    <label for="h1" <input type="radio" name="h1">1</label>
+                    <label for="h0" <input type="radio" name="h0">0</label>
+                </div>
+                <label for="grafico">História</label>
+                <div id="grafico">
+                    <label for="g3" <input type="radio" name="g3">3</label>
+                    <label for="g2" <input type="radio" name="g2">2</label>
+                    <label for="g1" <input type="radio" name="g1">1</label>
+                    <label for="g0" <input type="radio" name="g0">0</label>
+                </div>
+                <label for="jogabilidade">História</label>
+                <div id="jogabilidade">
+                    <label for="j3" <input type="radio" name="j3">3</label>
+                    <label for="j2" <input type="radio" name="j2">2</label>
+                    <label for="j1" <input type="radio" name="j1">1</label>
+                    <label for="j0" <input type="radio" name="j0">0</label>
+                </div>
+                <label for="multiplayer">História</label>
+                <div id="multiplayer">
+                    <label for="m3" <input type="radio" name="m3">3</label>
+                    <label for="m2" <input type="radio" name="m2">2</label>
+                    <label for="m1" <input type="radio" name="m1">1</label>
+                    <label for="m0" <input type="radio" name="m0">0</label>
+                </div>
+            </div>
+            <div class="categoria"></div>
+            <div class="categoria"></div>
+            <div class="categoria"></div>
+        </div>
+        <div>
+            <input type="radio" name="" id="">
+        </div>
+        <div>
+            <button>Enviar Resposta</button>
         </div>
     </section>
 </body>

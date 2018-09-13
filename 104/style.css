@@ -1,10 +1,11 @@
 /* overflow: scroll; / serve para criar barra de rolagem dentro do item*/
 /* border: 2px dotted red; /borda listrada*/
+/*projeto incompleto*/ 
 body{
     margin: 0 auto; /*auto deixa as margins regularadas na horizontal automaticamente*/
     background-color: lightgray;
     font-family: "Comic Sans MS",sans-serif;
-    color: darkgray;
+    color: darkblue;
     width: 80vw;
 }
 
@@ -32,9 +33,44 @@ section{
 section>div{
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     border: 2px dashed darkblue; /* bordar estranah */
     border-radius: 50px;
+    padding:20px 0px;
 }
 
+section:last-child{
+    padding: 20px;
+}
+
+section button{
+    background-color: red;
+    border: 5px dotted darkblue;
+    height: 80px;
+    width: 80px;
+    border-radius: 50
+    cursor: pointer;
+}
+
+#check-generos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+#relevancia{
+    width: 50%;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+.categoria div{
+    display: inline;
+}
