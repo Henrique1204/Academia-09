@@ -1,0 +1,40 @@
+/* overflow: scroll; / serve para criar barra de rolagem dentro do item*/
+/* border: 2px dotted red; /borda listrada*/
+body{
+    margin: 0 auto; /*auto deixa as margins regularadas na horizontal automaticamente*/
+    background-color: lightgray;
+    font-family: "Comic Sans MS",sans-serif;
+    color: darkgray;
+    width: 80vw;
+}
+
+body>*{ /* astérisco serve para selicionar tudo */ 
+    border: 10px solid darkblue;
+    border-radius: 100px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: sticky;
+    top: 0;
+    height: 200px;
+}
+
+section{
+    margin-top: 50px;
+    padding: 0 40px;
+}
+
+section>div{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border: 2px dashed darkblue; /* bordar estranah */
+    border-radius: 50px;
+}
+
