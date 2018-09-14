@@ -16,7 +16,11 @@ header{
     flex-direction: column; 
 }
 
-div:first-child{
+h1{
+    font-size: 28pt;
+}
+
+#navegacao{
     position: relative;
     top: -157px;
     width: 100%;
@@ -25,14 +29,65 @@ div:first-child{
     justify-content: space-evenly;
 }
 
-div:nth-child(2){
+nav{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div:last-child{
+#pesquisa{
+    position: relative;
+    top: -34px;
+    right: -6px;
     flex-direction: column;
+ 
+}
+
+label:nth-child(2){
+    position: relative;
+    left: -66px;
+}
+
+#pesquisa button{
+    position: relative;
+    left: -16px;
+    background-color: blue;
+    width: 102px;
+    height: 40px;
+}
+
+#pesquisa div:last-child{
+    position: relative;
+    left: -44px;
+    top:22px;
+}
+
+select {
+    position: relative;
+    top: -3px;
+    left:-100px;
+    /* right: 94px; */
+    width: 196px;
+    height: 27px;
+}
+
+#pesquisa div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#busca{
+    width: 550px;
+    height: 33px;
+    margin-right: 80px;
+}
+
+h1{
+    color: white;
+}
+
+label{
+    color: white;
 }
 
 img {
@@ -52,3 +107,4 @@ nav a{
 nav a:hover{
     border-top: 3px solid white;
 }
+
