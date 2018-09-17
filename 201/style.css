@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    background-color: blue;
+    height: 40vw; /*usar vw em altura e largura, faz com que os dois cresça igual*/
+    width: 40vw;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 1000px){ /* orientatio:landscape é usado para deixar o @media adapto para tela de paisagens ou retrato, paisagem é quando a largua é maior que a altura, retrato é quando a altura é maior que a largura*/
+div{
+    background-color: chartreuse;
+    height: 20vw;
+    width: 20vw;
+}
