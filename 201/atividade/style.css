@@ -17,8 +17,8 @@
     position: absolute;
     top: 12px;
     left: 5px;
-    height: 6px;
-    width: 1px;
+    height: 10px;
+    width: 4px;
     background-color: currentColor;
 }  
 
@@ -56,6 +56,7 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower'); /*import de fonte*/
 
   body{
+    overflow-x: hidden;
     background-image: url(imagens/fundo.jpg);
     flex-direction: column;
     background-repeat: cover;
@@ -115,6 +116,12 @@ h1{
     padding: 0 2px;
 }
 
+#navegacao input{
+    border: 2px solid black;
+    padding: 5px 10px 5px 25px;
+    font-family: 'indie flower', 'cursive';
+}
+
 @media screen and (min-width: 470px){
     header>div{
         display:none;
@@ -131,5 +138,18 @@ h1{
 
     #navegacao input{
         display: none;
+    }
+}
+
+@media screen and (min-width: 800px){
+    #navegacao nav{
+        width: 60%;
+    }
+
+    #navegacao input{
+        display: inline-block;
+    }
+    #navegacao>div{
+        width: 28%;
     }
 }
