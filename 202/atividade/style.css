@@ -8,24 +8,15 @@ body{
     height: 100vh;
 }
 
-#caixadaimagem div:nth-child(2){
-    border-top-left-radius: 35%;
-    border-bottom-left-radius: 50%; 
-}
-
-#caixadaimagem div:nth-child(7){
-    border-top-right-radius: 35%;
-    border-bottom-right-radius: 50%; 
-}
-
 h1{
     color: white;
     margin: 0;
 }
 
-.carregamento{
+.carregamento{ 
     height: 45%;
     width: 12%;
+    visibility: hidden;
 }
 
 #caixadaimagem{
@@ -51,6 +42,43 @@ h1{
     margin-left: -5px;
 }
 
-@keyframes color {
+#caixadaimagem div:nth-child(2){
+    border-top-left-radius: 35%;
+    border-bottom-left-radius: 50%;
+    background-color: rgba(255, 0, 0, 1);
+    animation: 6s 1s color linear; 
+}
 
+#caixadaimagem div:nth-child(3){
+    background-color: rgba(255, 68, 0, 1);
+    animation: 5s 2s color linear;
+}
+#caixadaimagem div:nth-child(4){
+    background-color: rgba(255, 166, 0, 1);
+    animation: 4s 3s color linear;
+}
+
+#caixadaimagem div:nth-child(5){
+    background-color: rgba(255, 255, 0, 1);
+    animation: 3s 4s color linear;
+}
+#caixadaimagem div:nth-child(6){
+    background-color: rgba(153, 205, 50, 1);
+    animation: 2s 5s color linear;
+}
+
+#caixadaimagem div:nth-child(7){
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 50%;
+    background-color: rgba(0, 128, 0, 1);
+    animation: 1s 6s color linear;
+}
+
+@keyframes color {
+    0%{
+        visibility: visible;
+    }
+    80%{
+        visibility: hidden;
+    }
 }
