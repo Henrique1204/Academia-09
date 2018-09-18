@@ -1,0 +1,43 @@
+    /*transition-duration:// 5s;duração da animação*/
+    /*transition-delay: 1s;// tempo que ele espera para aplicar*/
+    /*transition-property: background-color;// escoleh qual propriedade você quer aplicar*/
+    /*transition-timing-function: linear;//serve para manter velocidade constante*/
+    /*transition-timing-function: ease-in;// serve para fazer começar mais lento e acalera no final*/
+    /*transition-timing-function: ease-out;// serve para fazer terminar mais lento */
+    /*transition-timing-function: ease-in-out;// serve para começar lento, acelerar no meio e ficar lento no fim*/
+    /*animation-iteration-count: 1;//contar repetições*/
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: darkblue;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-name:animar;
+    animation-iteration-count: 1; /*contar repetições*/
+}
+
+@keyframes animar {
+
+    0%{
+        transform:translateY(0px);
+    }
+    25%{
+        transform:translateY(-300px);
+    }
+    75%{
+        transform:translateY(300px);
+    }
+    100%{
+        transform:translateY(opx);
+    }
+}
