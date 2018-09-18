@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagem/fundo.jpg);
+    height: 100vh;
+}
+
+#caixadaimagem div:nth-child(2){
+    border-top-left-radius: 35%;
+    border-bottom-left-radius: 50%; 
+}
+
+#caixadaimagem div:nth-child(7){
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 50%; 
+}
+
+h1{
+    color: white;
+    margin: 0;
+}
+
+.carregamento{
+    height: 45%;
+    width: 12%;
+}
+
+#caixadaimagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 200px;
+    width: 300px;
+}
+
+#caixadaimagem img{
+    z-index: 1;
+    position: absolute;
+    height: 90%;
+    width: 90%;
+}
+
+#tampa{
+    height: 14%;
+    width: 19px;
+    background-color: black;
+    margin-left: -5px;
+}
+
+@keyframes color {
+
+}
