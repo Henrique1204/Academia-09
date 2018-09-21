@@ -18,11 +18,11 @@ else{
     alert("Você não pode fazer empréstimo");
 }*/
 /* `string ${variavel aqui}` serve para colocar variavel dentro da string */
-/*.trim serve para deixar as string obrigatóriamente começando com um caracter, desconsiderando o espaço*/
+/*.trim() serve para deixar as string obrigatóriamente começando com um caracter, desconsiderando o espaço*/
 
 let nome = prompt("Digite aqui seu nome");
 
-if(nome !== null && nome !== ""){
+if(nome && nome.trim()){
     alert(`Olá! Seja bem vindo, ${nome}`);
 }
 else{
