@@ -1,11 +1,25 @@
+/* exemplo validação*/
+function validar(entrada, limiteInferior, limiteSuperior){
+    if(!limiteInferior){
+        limiteInterior = -Infinity;
+    }
+    if(!limiteSuperior){
+        limiteSuperior = Infinity;
+    }
+    if(entrada && entrada.trim() && !isNaN(Number(entrada)) && Number(entrada) > limiteInferior && Number(entrada) < limiteSuperior){
+        return true;
+    }
+    return false;
+}
 /*
 Exercício 1
+*/
 let idade = prompt("Quantos anos você tem?");
 let salario = prompt("Quanto você recebe?");
 let emprestimo = prompt("Quanto você quer de empréstimo?");
-let juros = 1,085;
+let juros = 1.085;
 
-if(((idade >=21 && idade <=55) && salario >=1000) && emprestimo>=500 && emprestimo<=15*salario){
+if(validar(idade, 21, 55) && validar(salario, 1000) &&  validar(idade, 500, 15*salario)){
     alert(`Você pode fazer o empréstimo de ${emprestimo}`);
     let formadepagamento = confirm("Você gostaria de parcelar?");
     let parcelas = prompt("Nós parcelemos de 3 até 24 vezes. Qual parcela é melhor para você?");
@@ -13,7 +27,7 @@ if(((idade >=21 && idade <=55) && salario >=1000) && emprestimo>=500 && empresti
     if(formadepagamento && parcelas >=3 && parcelas <=24){
         alert(`Você irá parcelar o empréstimo de R$ ${emprestimo} em ${parcelas} parcelas de R$ ${emprestimo/parcelas*juros}. Ao todo você pagará R$ ${emprestimo*juros}`);
     }
-    else if(parcelas <3 && >24){
+    else if(parcelas < 3 && parcelas >24){
         alert("Não parcelamos nesse tanto de vezes")
     }
     else{
@@ -23,7 +37,6 @@ if(((idade >=21 && idade <=55) && salario >=1000) && emprestimo>=500 && empresti
 else{
     alert(`Você não pode fazer o empréstimo de R$ ${emprestimo}`);
 }
-*/
 
 /*
 Exercício 2

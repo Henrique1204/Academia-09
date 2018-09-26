@@ -7,16 +7,6 @@
 
 /* confirm("Mensagem de confirm") //serve para confirmar algo, os resultado é dado me booleanos, "ok" = true e "cancelar"/esc = false*/
 
-/*let idade= prompt("Qual sua idade?");
-let salario= prompt("Quanto você ganha?");
-let emprestimo= prompt("Quanto você que emprestado?");
-
-if(((idade>=21 && idade<=55)&& salario>0) && emprestimo<=10*salario){
-    alert("Você pode fazer o empréstimo");
-}
-else{
-    alert("Você não pode fazer empréstimo");
-}*/
 /* `string ${variavel aqui}` serve para colocar variavel dentro da string */
 /*.trim() serve para deixar as string obrigatóriamente começando com um caracter, desconsiderando o espaço*/
 
