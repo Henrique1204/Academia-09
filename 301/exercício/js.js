@@ -52,13 +52,17 @@ Exercício 3
 
 function escada(altura){
     let lista = [];
-    for(let index = 1; index <= altura; index++){
-        lista.push(caracter.repeat(index))
+    for(let i = 1; index <= altura; i++){
+        lista.push(caracter.repeat(i))
     }
     
     lista.forEach(function(item) {
         console.log(item)
     })
+
+    for(let item in lista){
+        console.log(lista[item]);
+    }
 }
 
 let degraus = Number(prompt("Escolha a quantidade de degraus"));
