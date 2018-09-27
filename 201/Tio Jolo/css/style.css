@@ -21,6 +21,7 @@ header{
 }
 
 header>div{
+    cursor: pointer; /*deixa o mouse com mãozinha*/
     position: relative;
     height: 20%;
     width: 10%;
@@ -99,4 +100,11 @@ h2{
 .produto p{
     font-size: 14pt;
     font-weight: bolder;
+}
+
+#info{
+    border: 2px solid black;
+    height: 20px;
+    width: 50%;
+    margin: 10px 0;
 }
