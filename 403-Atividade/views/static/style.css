@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(black, purple, black);
+}
+
+header{
+    top:0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba( 0, 0, 0, 0.5);
+}
+
+img{
+    margin: 0;
+    height: 75%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 20%;
+}
+
+a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
