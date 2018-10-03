@@ -1,0 +1,53 @@
+@media screen and (min-width: 1111px){
+    body{
+        margin: 0 auto;
+    }
+
+    #navegacao{
+        justify-content: space-around;
+        height: 10vh;
+        align-items: center;
+    }
+
+    #navegacao nav{
+        justify-content: space-between;
+    }
+
+    #navegacao>div{
+        display: flex;
+        text-align: right;
+        align-items: center;
+    }
+
+    .search.icon{
+        display: none;
+    }
+
+    #navegacao h2{
+        display: block;
+    }
+
+    header{
+        height: 10vh;
+    }
+
+    #navegacao nav a{
+        border: none;
+        border-bottom: 2px solid black;
+    }
+
+    #navegacao nav a:hover{
+        border: 2px solid black;
+    }
+
+    header h1{
+        font-size: 36pt;
+    }
+
+    #itens{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+}
